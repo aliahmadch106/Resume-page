@@ -1,0 +1,122 @@
+@media (orientation:portrait) {
+    nav{
+        height: 100%;
+        width: 70%;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        display: flex;
+        margin-left: -70%;
+        transition: 1s;
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
+    .menuIcon{
+        display: flex;
+        padding: 5px;
+        font-size: 3rem;
+        position: fixed;
+        top: 10px; right: 10px;
+    }
+    #home{
+        flex-direction: column;
+    }
+    .info{
+        width: 95%;
+        aspect-ratio: 9/9;
+    }
+    .card-container {
+        width: 95%;
+        aspect-ratio: 9/9;
+    }
+    #card {
+        width: 85%;
+    }
+    .box{
+        width: 55%;
+        aspect-ratio: 9/13;
+    }
+    .box span{
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+    }
+    #contact{
+        gap: 10vh;
+        padding-bottom: 5vh;
+        .outer-contact{
+            gap: 20vh;
+        }
+    }
+    .outer-contact{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        .contact-container{
+            height: 40%;
+            width: 100%;
+        }
+        .contact-form{
+            height: max-content;
+            width: 100%;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 0 10px #6d6d6d;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h1{
+                font-size: 2rem;
+                color: #f84600;
+            }
+            input{
+                width: 70%;
+                aspect-ratio: 16/2;
+                border: none;
+                border-radius: 20px;
+                padding-left: 15px;
+                background: #d9d9d9;
+            }
+            .messagebox{
+                padding-left: 15px;
+                padding-top: 5px;
+                border: none;
+                width: 70%;
+                aspect-ratio: 16/5;
+                border-radius: 20px;
+                background: #d9d9d9;
+            }
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 15px;
+                background: #f84600;
+                color: var(--main-backcolor);
+                text-shadow: 0 1px 0px black;
+                font-size: 1.3rem;
+                cursor: pointer;
+                    transform: rotateX(-30deg);
+                    box-shadow:
+                    0 4px 0px rgb(255, 255, 255),
+                    0 9px 5px #6d6d6d;
+                    &:hover{
+                        transform: translateY(-2px) rotateX(-30deg);
+                        box-shadow:
+                            0 6px 0px rgb(255, 255, 255),
+                            0 9px 5px #6d6d6d;
+                    }
+                    &:active{
+                        transform: translateY(5px) rotateX(-30deg);
+                        box-shadow:
+                            0 1px 0px rgb(255, 255, 255),
+                            0 3px 5px #6d6d6d;
+                    }
+            }
+        }
+    }
+}

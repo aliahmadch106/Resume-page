@@ -1,0 +1,118 @@
+@media (orientation:landscape) {
+    nav{
+        height: 13vh;
+        width: 100%;
+        justify-content: center; 
+        gap: 10%;
+        display: flex;
+        a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            &:hover{
+                color: var(--primary-color);
+            }
+        }
+    }
+    .menuIcon{
+        display: none;
+    }
+    
+    #home{
+        padding-top: 17vh;
+    }
+    .info{
+        width: 40%;
+        aspect-ratio: 9/9;
+    }
+    .card-container {
+        width: 40%;
+        aspect-ratio: 9/9;
+    }
+    #card {
+        height: 75%;
+    }
+    .box{
+        width: 15%;
+        aspect-ratio: 9/12;
+    }
+    .box span{
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(70vh);
+    }
+    #contact{
+        gap: 10vh;
+        padding-bottom: 10vh;
+    }
+    .outer-contact{
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        .contact-container{
+            height: 100%;
+            width: 40%;
+        }
+        .contact-form{
+            height: 100%;
+            width: 40%;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0 10px #6d6d6d;
+            h1{
+                font-size: 2rem;
+                color: #f84600;
+            }
+            input{
+                width: 85%;
+                aspect-ratio: 16/2;
+                border: none;
+                border-radius: 20px;
+                padding-left: 15px;
+                background: #d9d9d9;
+            }
+            .messagebox{
+                width: 85%;
+                aspect-ratio: 16/5;
+                padding-left: 15px;
+                padding-top: 5px;
+                border: none;
+                border-radius: 20px;
+                background: #d9d9d9;
+            }
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 15px;
+                background: #f84600;
+                color: var(--main-backcolor);
+                text-shadow: 0 1px 0px black;
+                font-size: 1.3rem;
+                cursor: pointer;
+                    transform: rotateX(-30deg);
+                    box-shadow:
+                    0 4px 0px rgb(255, 255, 255),
+                    0 9px 5px #6d6d6d;
+                    &:hover{
+                        transform: translateY(-2px) rotateX(-30deg);
+                        box-shadow:
+                            0 6px 0px rgb(255, 255, 255),
+                            0 9px 5px #6d6d6d;
+                    }
+                    &:active{
+                        transform: translateY(5px) rotateX(-30deg);
+                        box-shadow:
+                            0 1px 0px rgb(255, 255, 255),
+                            0 3px 5px #6d6d6d;
+                    }
+            }
+        }
+    }
+    .contact-socialicon a:hover{
+        transform: scale(1.2, 1.2);
+    }
+}
+
